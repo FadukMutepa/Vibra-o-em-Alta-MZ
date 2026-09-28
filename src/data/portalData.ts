@@ -1,5 +1,15 @@
 import { Article, SongTrack, ArtistProfile, EventMZ } from '../types';
 
+// Bundled static image imports so Vite compiles them into dist/assets for Cloudflare / production
+import heroMusicImg from '../assets/images/hero_mozambique_music_1790599088083.jpg';
+import festivalMaputoImg from '../assets/images/event_festival_maputo_1790599121617.jpg';
+import producerStudioImg from '../assets/images/marrabenta_producer_studio_1790600549341.jpg';
+import pandzaPartyImg from '../assets/images/pandza_summer_party_1790600561262.jpg';
+import awardsGalaImg from '../assets/images/awards_trophy_gala_mz_1790600574188.jpg';
+import studioCollabImg from '../assets/images/studio_duet_collab_mz_1790600598123.jpg';
+import artistSpotlightImg from '../assets/images/artist_spotlight_marrabenta_1790599100366.jpg';
+import albumPandzaImg from '../assets/images/album_launch_pandza_1790599110717.jpg';
+
 export const HERO_ARTICLE: Article = {
   id: 'destaque-principal',
   title: 'Novo lançamento de artista moçambicano conquista destaque nas plataformas digitais',
@@ -15,7 +25,7 @@ export const HERO_ARTICLE: Article = {
     '"O nosso objectivo foi mostrar que as nossas raízes não estão no passado, mas são o passaporte para o mundo", afirmou o artista durante a apresentação oficial do videoclipe no Centro Cultural Franco-Moçambicano.',
     'Nas redes sociais, internautas moçambicanos e da diáspora celebram o sucesso e partilham a coreografia que já se tornou viral no TikTok e Instagram Reels. Especialistas da indústria apontam o tema como forte candidato ao prémio de Melhor Canção do Ano nos próximos Ngoma Moçambique.'
   ],
-  imageUrl: '/src/assets/images/hero_mozambique_music_1790599088083.jpg',
+  imageUrl: heroMusicImg,
   featured: true,
   tags: ['Marrabenta', 'Afro-Pop', 'Maputo', 'Lançamento', 'Tendências'],
   artistName: 'Mabermuda & Nova Geração MZ',
@@ -38,7 +48,7 @@ export const ARTICLES_DATA: Article[] = [
       'Com bilhetes acessíveis e transmissão via rádio para todo o país, a organização destaca o compromisso de promover a economia criativa local e artesãos de todas as províncias.',
       'Os bilhetes já se encontram disponíveis nos postos habituais e via M-Pesa com desconto especial de lançamento.'
     ],
-    imageUrl: '/src/assets/images/event_festival_maputo_1790599121617.jpg',
+    imageUrl: festivalMaputoImg,
     tags: ['Festivais', 'Maputo', 'Música ao Vivo', 'Cultura MZ']
   },
   {
@@ -55,7 +65,7 @@ export const ARTICLES_DATA: Article[] = [
       'Jovens beatmakers estão a resgatar vinis antigos de Dilon Djindji e Orchestra Marrabenta Star de Moçambique, transformando samples históricos em hinos para pistas de dança cosmopolitas.',
       '"Nós não precisamos de copiar o que vem de fora quando a nossa identidade tem um groove inconfundível", destaca o produtor Maputo Beats.'
     ],
-    imageUrl: '/src/assets/images/marrabenta_producer_studio_1790600549341.jpg',
+    imageUrl: producerStudioImg,
     tags: ['Marrabenta', 'Produção Musical', 'Cultura', 'Chamanculo']
   },
   {
@@ -72,7 +82,7 @@ export const ARTICLES_DATA: Article[] = [
       'As 7 faixas trazem colaborações inéditas e melodias contagiantes, pensadas para o calor e animação que caracterizam o verão moçambicano.',
       'Faixas como "Chapa 100" e "Bairro em Festa" registam grande adesão nas plataformas digitais e já são as mais pedidas nas rádios privadas e públicas.'
     ],
-    imageUrl: '/src/assets/images/pandza_summer_party_1790600561262.jpg',
+    imageUrl: pandzaPartyImg,
     tags: ['Pandza', 'Verão MZ', 'Música Urbana', 'Dança']
   },
   {
@@ -89,7 +99,7 @@ export const ARTICLES_DATA: Article[] = [
       'As categorias de Melhor Artista Masculino, Melhor Artista Feminina e Canção Mais Popular contam com forte disputa entre nomes de topo do cenário nacional.',
       'O público pode votar gratuitamente através do portal oficial até ao final da primeira quinzena do próximo mês.'
     ],
-    imageUrl: '/src/assets/images/awards_trophy_gala_mz_1790600574188.jpg',
+    imageUrl: awardsGalaImg,
     tags: ['Prémios', 'Ngoma', 'Reconhecimento', 'Votação']
   },
   {
@@ -105,7 +115,7 @@ export const ARTICLES_DATA: Article[] = [
       'A conexão Maputo-Luanda volta a render frutos de excelência musical. O dueto lançado no início do mês ultrapassou fronteiras e já ocupa o topo dos serviços de streaming em Portugal, Cabo Verde e Moçambique.',
       'O videoclipe gravado na Costa do Sol e na Ilha de Luanda recebeu rasgados elogios pela fotografia e valorização das paisagens tropicais dos dois países irmãos.'
     ],
-    imageUrl: '/src/assets/images/studio_duet_collab_mz_1790600598123.jpg',
+    imageUrl: studioCollabImg,
     tags: ['CPLP', 'Colaborações', 'Kizomba', 'Lusofonia']
   }
 ];
@@ -119,7 +129,7 @@ export const TOP_TRACKS_DATA: SongTrack[] = [
     duration: '3:24',
     streams: '840K plays',
     releaseDate: 'Há 3 dias',
-    coverImage: '/src/assets/images/album_launch_pandza_1790599110717.jpg',
+    coverImage: albumPandzaImg,
     beatType: 'pandza',
     lyricsSnippet: 'Da Matola até à Polana, batida no peito, orgulho da terra...'
   },
@@ -131,7 +141,7 @@ export const TOP_TRACKS_DATA: SongTrack[] = [
     duration: '3:45',
     streams: '1.2M plays',
     releaseDate: 'Há 1 semana',
-    coverImage: '/src/assets/images/hero_mozambique_music_1790599088083.jpg',
+    coverImage: heroMusicImg,
     beatType: 'marrabenta',
     lyricsSnippet: 'Marrabenta no sangue, acende o fogo, a noite é nossa...'
   },
@@ -143,7 +153,7 @@ export const TOP_TRACKS_DATA: SongTrack[] = [
     duration: '4:10',
     streams: '960K plays',
     releaseDate: 'Há 2 semanas',
-    coverImage: '/src/assets/images/artist_spotlight_marrabenta_1790599100366.jpg',
+    coverImage: artistSpotlightImg,
     beatType: 'kizomba',
     lyricsSnippet: 'Segura na minha mão, vamos andar na marginal sob as estrelas...'
   },
@@ -155,7 +165,7 @@ export const TOP_TRACKS_DATA: SongTrack[] = [
     duration: '5:02',
     streams: '720K plays',
     releaseDate: 'Há 4 dias',
-    coverImage: '/src/assets/images/event_festival_maputo_1790599121617.jpg',
+    coverImage: festivalMaputoImg,
     beatType: 'afrohouse',
     lyricsSnippet: 'Batida pesada, percussão que não para, sente a vibração...'
   },
@@ -167,7 +177,7 @@ export const TOP_TRACKS_DATA: SongTrack[] = [
     duration: '4:18',
     streams: '510K plays',
     releaseDate: 'Há 2 semanas',
-    coverImage: '/src/assets/images/hero_mozambique_music_1790599088083.jpg',
+    coverImage: heroMusicImg,
     beatType: 'marrabenta',
     lyricsSnippet: 'Vento que sopra do mar traz as memórias dos nossos avós...'
   }
@@ -183,7 +193,7 @@ export const ARTISTS_DATA: ArtistProfile[] = [
     province: 'Gaza',
     bio: 'Figura central da música popular moçambicana contemporânea, com dezenas de sucessos que marcam casamentos, celebrações e as maiores pistas de dança do país.',
     popularTrack: 'Dança da Terra Nova',
-    avatarUrl: '/src/assets/images/artist_spotlight_marrabenta_1790599100366.jpg',
+    avatarUrl: artistSpotlightImg,
     followers: '2.4M seguidores'
   },
   {
@@ -195,7 +205,7 @@ export const ARTISTS_DATA: ArtistProfile[] = [
     province: 'Maputo Cidade',
     bio: 'Revelação meteórica com timbre inconfundível, acumulando milhões de visualizações e duetos com as maiores referências da lusofonia.',
     popularTrack: 'Xigubo Moderno',
-    avatarUrl: '/src/assets/images/album_launch_pandza_1790599110717.jpg',
+    avatarUrl: albumPandzaImg,
     followers: '1.8M seguidores'
   },
   {
@@ -207,7 +217,7 @@ export const ARTISTS_DATA: ArtistProfile[] = [
     province: 'Maputo Cidade',
     bio: 'Pioneiro moçambicano a cruzar fronteiras com colaborações de peso em África e nos EUA, elevando a rima urbana em Changana e Português.',
     popularTrack: 'Slay & Xigubo',
-    avatarUrl: '/src/assets/images/hero_mozambique_music_1790599088083.jpg',
+    avatarUrl: heroMusicImg,
     followers: '1.5M seguidores'
   },
   {
@@ -219,7 +229,7 @@ export const ARTISTS_DATA: ArtistProfile[] = [
     province: 'Maputo',
     bio: 'Mais de duas décadas de carreira exemplar, defendendo a riqueza cultural e musical de Moçambique com carisma inigualável e energia nos palcos.',
     popularTrack: 'Arromba & Marrabenta',
-    avatarUrl: '/src/assets/images/artist_spotlight_marrabenta_1790599100366.jpg',
+    avatarUrl: artistSpotlightImg,
     followers: '2.1M seguidores'
   }
 ];
