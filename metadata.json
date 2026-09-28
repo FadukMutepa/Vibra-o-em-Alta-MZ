@@ -1,0 +1,6 @@
+{
+  "name": "Vibração em Alta MZ",
+  "description": "Portal moçambicano dedicado à música, artistas e entretenimento. A música e o entretenimento de Moçambique em alta.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
